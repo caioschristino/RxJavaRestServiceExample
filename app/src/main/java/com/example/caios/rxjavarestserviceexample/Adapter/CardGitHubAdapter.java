@@ -16,10 +16,10 @@ import java.util.List;
  * Created by caios on 5/3/16.
  */
 
-public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
+public class CardGitHubAdapter extends RecyclerView.Adapter<CardGitHubAdapter.ViewHolder> {
     List<Github> mItems;
 
-    public CardAdapter() {
+    public CardGitHubAdapter() {
         super();
         mItems = new ArrayList<Github>();
     }
@@ -37,7 +37,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.recycler_view, viewGroup, false);
+                .inflate(R.layout.github_card_adapter, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }

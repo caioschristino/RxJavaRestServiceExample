@@ -17,4 +17,8 @@ public class Data {
         add("facebook");
         add("rails");
     }};
+
+    public static List<String> mockHost = new ArrayList<String>() {{
+        add("572a406d0f00006c17a055bc");
+    }};
 }
